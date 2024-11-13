@@ -4,8 +4,7 @@ const nextConfig = {
     reactStrictMode: true,
     images: {
       unoptimized: true,
-    },
-    basePath: '/Portfolio',
+    }
   }
   
   module.exports = nextConfig
