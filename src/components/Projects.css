@@ -1,0 +1,53 @@
+/* Projects.css */
+
+.projects-section {
+  padding: 80px 20px;
+  background-color: #eef2f6; /* Fundo ligeiramente diferente */
+  color: #333;
+  text-align: center;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-title {
+  font-size: 2.8em;
+  color: #007bff;
+  margin-bottom: 50px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.projects-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: #007bff;
+  border-radius: 2px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid responsivo */
+  gap: 30px; /* Espaço entre os cards */
+  justify-content: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 2.2em;
+  }
+  .projects-section {
+    padding: 60px 15px;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr; /* Uma coluna em telas menores */
+  }
+}

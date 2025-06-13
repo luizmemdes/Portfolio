@@ -1,0 +1,119 @@
+/* Contact.css */
+
+.contact-section {
+  padding: 80px 20px;
+  background-color: #eef2f6; /* Fundo ligeiramente diferente */
+  color: #333;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  font-size: 2.8em;
+  color: #007bff;
+  margin-bottom: 40px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.contact-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: #007bff;
+  border-radius: 2px;
+}
+
+.contact-description {
+  font-size: 1.15em;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px; /* Espaço entre os botões de contato */
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white; /* Cor do texto padrão para os botões */
+}
+
+.contact-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-btn.linkedin {
+  background-color: #0077b5; /* Azul LinkedIn */
+}
+
+.contact-btn.linkedin:hover {
+  background-color: #005f91;
+}
+
+.contact-btn.github {
+  background-color: #333; /* Preto GitHub */
+}
+
+.contact-btn.github:hover {
+  background-color: #555;
+}
+
+.contact-btn.email {
+  background-color: #d9534f; /* Vermelho vibrante */
+}
+
+.contact-btn.email:hover {
+  background-color: #c9302c;
+}
+
+/* Opcional: Estilos para o botão de currículo */
+.contact-btn.resume {
+  background-color: #17a2b8; /* Azul claro */
+}
+
+.contact-btn.resume:hover {
+  background-color: #138496;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 2.2em;
+  }
+  .contact-description {
+    font-size: 1em;
+  }
+  .contact-links {
+    flex-direction: column; /* Botões um abaixo do outro */
+    gap: 15px;
+  }
+  .contact-btn {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contact-section {
+    padding: 60px 15px;
+  }
+}
